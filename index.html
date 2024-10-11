@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/wow.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--bootstrap css  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- mdbootstrap css -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!--style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="cruds text-white mt-5 pt-2">
+        <div class="header container">
+            <div class="row">
+                <div class="col-12 text-center text-uppercase">
+                    <h1>cruds</h1>
+                    <h3 class="mb-2">product management system</h3>
+                    <p class="mb-3" id="result"></p>
+                </div>
+            </div>
+        </div>
+        <div class="input container">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" name="title" id="title" placeholder="title">
+                </div>
+                <div class="inputs col-12">
+                    <input type="number" name="price" id="price" placeholder="price" class="col-md-2 col-3" onkeyup="getTotal()">
+                    <input type="number" name="taxes" id="taxes" placeholder="taxes"  class="col-md-2  col-3"  onkeyup="getTotal()">
+                    <input type="number" name="ads" id="ads" placeholder="ads"  class="col-md-2  col-3"  onkeyup="getTotal()">
+                    <input type="number" name="disccount" id="disccount" placeholder="disccount"  class="col-md-2 col-3"  onkeyup="getTotal()">
+                    <small id="total"></small>
+                </div>
+                <div class="col-12">
+                    <input type="number" name="count" id="count" placeholder="count">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="category" id="category" placeholder="category">
+                </div>
+                <div class="col-12">
+                    <button id="create" class="btn text-white btn-block">Create</button>
+                </div>
+            </div>
+        </div>
+        <div class="output container">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" name="search" id="search" placeholder="search" onkeyup="searchData(this.value)">
+                </div>
+                <div class="sreach col-12">
+                    <button id="searchTitle" class="btn text-white " onclick="getSearchMood(this.id)">search by title</button>
+                    <button id="searchCategory" class="btn text-white" onclick="getSearchMood(this.id)">search by category</button>
+                </div>
+                <div id="deleteAll"></div>
+                <div class="table-responsive" >
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>title</th>
+                                <th>price</th>
+                                <th>taxes</th>
+                                <th>ads</th>
+                                <th>discount</th>
+                                <th>total</th>
+                                <th>category</th>
+                                <th>update</th>
+                                <th>delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- fontawesome js -->
+    <script src="js/all.min.js"></script>
+    <!-- jquery js -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- mdbootstrap js -->
+    <script src="js/mdb.umd.min.js"></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+</body>
+</html>

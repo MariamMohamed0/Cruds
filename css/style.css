@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #243642;
+}
+/* start cruds-section */
+/* start input-section and output-section */
+.cruds .input input,
+.cruds .output input{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 2px;
+    font-size: 20px;
+    text-transform: capitalize;
+    border: 3px solid #314d5f;
+    border-radius: 5px;
+    outline: none;
+    background-color: #314d5f;
+    color: white;
+}
+.cruds .input input::placeholder,
+.cruds .output input::placeholder{
+    color: white;
+}
+.cruds .input input:focus{
+    border-color:#6A9AB0;
+}
+.cruds .input .inputs{
+    width: 100%;
+}
+.cruds .input .inputs input{
+    margin-right: 10px;
+}
+.cruds .input .inputs small{
+    font-size: 20px;
+    background-color: #257180;
+    border-radius: 4px;
+    text-transform: capitalize;
+    padding: 11px 21px;
+}
+.cruds .input .inputs small::before{
+    content: "total: ";
+}
+.cruds .input button,
+.cruds .output button{
+    background-color: #0B192C;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+/* end input-section and output-section */
+/* start output-section */
+.cruds .output .sreach button{
+    width: 48%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.cruds .output table{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 10px;
+    width: 100%;
+}
+.cruds .output table th{
+    text-transform: uppercase;
+    padding: 10px;
+}
+#updata,#delete,#deleteAll{
+    background-color: #0B192C;
+    padding: 2px 7px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+#deleteAll{
+    text-align: center;
+    padding: 0;
+}
+@media only screen and (max-width:1200px){
+    .cruds .output .sreach button{
+        width: 47%;
+    }
+}
+@media only screen and (max-width:992px){
+    .cruds .output .sreach button{
+        width: 46%;
+    }
+}
+@media only screen and (max-width:768px){
+    .cruds .output .sreach button{
+        width: 45%;
+    }
+}
+@media only screen and (max-width:567px){
+    .cruds .output .sreach button{
+        font-size: 17px;
+    }
+}
+/* end output-section */
+/* end cruds-section */
